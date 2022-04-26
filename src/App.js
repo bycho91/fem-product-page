@@ -13,14 +13,15 @@ import {
 import { Logo } from './Logo';
 import Navbar from './components/Navbar';
 import theme from './theme';
+import CartCard from './components/CartCard';
 
 function App() {
   return (
     <ChakraProvider theme={theme}>
       <Navbar />
       <Container maxW="container.xl">
-        <Box textAlign="center" fontSize="xl">
-          rest
+        <Box fontSize="xl">
+          <CartCard />
         </Box>
       </Container>
     </ChakraProvider>
